@@ -1,3 +1,5 @@
+# TWILIGHT / PRE-RELEASE VERSION 
+
 # Zen Browser for Nix
 
 This is a flake for the Zen browser. Originally forked from the unmaintained
@@ -21,7 +23,7 @@ To use, add it to the relevant NixOS configuration flake inputs:
 ```nix
 inputs = {
   # ...
-  zen-browser.url = "github:youwen5/zen-browser-flake";
+  zen-browser.url = "github:Silenc3IsGold3n/zen-browser-flake";
 
   # optional, but recommended so it shares system libraries, and improves startup time
   zen-browser.inputs.nixpkgs.follows = "nixpkgs";
@@ -54,7 +56,7 @@ packages
 
 The easiest way is to use the CLI imperatively:
 
-`nix profile install github:youwen5/zen-browser-flake`
+`nix profile install github:Silenc3IsGold3n/zen-browser-flake`
 
 If you're on NixOS and/or home-manager, you should install it in your system or
 home configuration.

@@ -29,11 +29,11 @@ def get_nix_hash [url: string]: nothing -> string  {
 }
 
 export def generate_sources []: nothing -> record {
-  let version = get_latest_release "zen-browser/desktop"
+  let name = get_latest_release "zen-browser/desktop"
   let tag = get_tag "zen-browser/desktop" 
   let prev_sources: record = open ./sources.json
 
-  if $version == $prev_sources.version {
+  if $name == $prev_sources.name {
 	# everything up to date
 	return {
 	  prev_tag: $tag
@@ -44,8 +44,8 @@ export def generate_sources []: nothing -> record {
   let x86_64_url = $"https://github.com/zen-browser/desktop/releases/download/($tag)/zen.linux-x86_64.tar.xz"
   let aarch64_url = $"https://github.com/zen-browser/desktop/releases/download/($tag)/zen.linux-aarch64.tar.xz"
   let sources = {
-	version: $version
-        tag: $tag
+	name: $name
+        version: $tag
 	x86_64-linux: {
 	  url:  $x86_64_url
 	  hash: (get_nix_hash $x86_64_url)
@@ -60,6 +60,6 @@ export def generate_sources []: nothing -> record {
 
   return {
     new_tag: $tag
-    prev_tag: $prev_sources.tag
+    prev_tag: $prev_sources.version
   }
 }

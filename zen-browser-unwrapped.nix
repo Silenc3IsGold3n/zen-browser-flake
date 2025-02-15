@@ -83,7 +83,7 @@ stdenv.mkDerivation (finalAttrs: {
     inherit gtk3;
 
     libName = "zen-${version}";
-    binaryName = finalAttrs.meta.mainProgram;
+    binaryName = "${finalAttrs.meta.mainProgram}-twilight";
     gssSupport = true;
     ffmpegSupport = true;
   };

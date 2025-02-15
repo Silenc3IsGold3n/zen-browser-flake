@@ -64,7 +64,7 @@ stdenv.mkDerivation (finalAttrs: {
     cp -r * "$prefix/lib/zen-${version}"
 
     mkdir -p $out/bin
-    ln -s "$prefix/lib/zen-${version}/zen" $out/bin/zen
+    ln -s "$prefix/lib/zen-${version}/zen" $out/bin/zen-twilight
 
     mkdir -p "$out/lib/zen-${version}/distribution"
     ln -s ${policiesJson} "$out/lib/zen-${version}/distribution/policies.json"

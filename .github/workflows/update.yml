@@ -2,7 +2,7 @@ name: Update to latest version, and update flake inputs
 
 on:
   schedule:
-    - cron: "0 4 * * *"
+    - cron: "0 */4 * * *"
   workflow_dispatch:
 
 jobs:

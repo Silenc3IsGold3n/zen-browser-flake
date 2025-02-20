@@ -1,12 +1,12 @@
 {
-  "name": "Twilight build - 1.8t (2025-02-19 at 12:13:09)",
+  "name": "Twilight build - 1.8t (2025-02-19 at 23:26:39)",
   "version": "twilight",
   "x86_64-linux": {
     "url": "https://github.com/zen-browser/desktop/releases/download/twilight/zen.linux-x86_64.tar.xz",
-    "hash": "sha256-dKj++AUaowXqnxed2CmwLmQQQUWxF/NwzHjWU24YQB0="
+    "hash": "sha256-vlSjy+dFfFIuZ/xvJ2AV60EZU4bbJakgHXhXORSIIkg="
   },
   "aarch64-linux": {
     "url": "https://github.com/zen-browser/desktop/releases/download/twilight/zen.linux-aarch64.tar.xz",
-    "hash": "sha256-wSKUkKDzybapxo3vFNwPRycyVQLIEsXMqMipB5jaDSY="
+    "hash": "sha256-jKPEuCXXzQQ/nq6jP37JTD481nAaJPp91UjbpRCx+1c="
   }
 }

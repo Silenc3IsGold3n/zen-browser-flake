@@ -5,4 +5,5 @@
 }:
 wrapFirefox zen-browser-unwrapped {
   pname = "zen-browser";
+  applicationName = "Zen Browser";
 }

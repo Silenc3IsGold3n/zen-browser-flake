@@ -13,7 +13,7 @@ def get_latest_release [repo: string]: nothing -> string {
   } catch { |err| $"Failed to fetch latest release, aborting: ($err.msg)" }
 }
 
-def get_updated_date [repo: string, tag: string] nothing -> string {
+def get_updated_date [repo: string, tag: string]: nothing -> string {
   try {
        http get $"https://api.github.com/repos/($repo)/releases" 
          | where tag_name == $tag 
@@ -26,7 +26,7 @@ def get_updated_date [repo: string, tag: string] nothing -> string {
   } catch { |err| $"Failed to fetch updated date of ($tag), aborting ($err.msg)" }
 }
 
-def tag_newest [repo: string, tag: string] nothing -> string {
+def tag_newest [repo: string, tag: string]: nothing -> string {
   let tag_updated_at = get_updated_date $repo $tag | into datetime | into int
   let twilight_updated_at = get_updated_date $repo "twilight" | into datetime | into int
   if $twilight_updated_at > $tag_updated_at { 

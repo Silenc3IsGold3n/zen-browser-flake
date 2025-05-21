@@ -2,14 +2,14 @@
   "name": "Release build - 1.12.6b (2025-05-20)",
   "version": "twilight",
   "updated_at": [
-    "2025-05-21T08:19:46Z"
+    "2025-05-21T10:57:56Z"
   ],
   "x86_64-linux": {
     "url": "https://github.com/zen-browser/desktop/releases/download/twilight/zen.linux-x86_64.tar.xz",
-    "hash": "sha256-eHVeceQ99jx4O/DI68Yxl4UKrddYHxD4qOB90WSvtAU="
+    "hash": "sha256-BOgQzMjbyTrud8lPctV+RKTjBCv02VDcqXWhRNXpEzs="
   },
   "aarch64-linux": {
     "url": "https://github.com/zen-browser/desktop/releases/download/twilight/zen.linux-aarch64.tar.xz",
-    "hash": "sha256-56Z1dvcLCLJ+lYT7hZRgUtxSQrsyBYp5geDVaPn4RF0="
+    "hash": "sha256-O0jXDmMYHLRe45ohFijcmmwNUTRIE0FOyOap6kvUqqA="
   }
 }
